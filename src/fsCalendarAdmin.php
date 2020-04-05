@@ -3,7 +3,7 @@ class fsCalendarAdmin {
 	
 	var $settings;
 	
-	function fsCalendarAdmin() {
+	function __construct() {
 		add_action('admin_menu',           array(&$this, 'hookAddAdminMenu'), 98);
 		add_action('admin_menu',           array(&$this, 'hookOrderAdminMenu'), 99);
 		

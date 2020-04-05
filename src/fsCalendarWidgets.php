@@ -1,6 +1,6 @@
 <?php
 class WPCalendarGrouped extends WP_Widget {
-    function WPCalendarGrouped() {
+    function __construct() {
     	$widget_ops = array(
     		'classname'=>'WPCalendarGrouped', 
     		'description'=>__('Display Events grouped by day/month/year', fsCalendar::$plugin_textdom)
@@ -9,7 +9,7 @@ class WPCalendarGrouped extends WP_Widget {
     	// Settings
 		$control_ops = array(); 
 		
-		parent::WP_Widget(false, __('WP Calendar (Grouped)', fsCalendar::$plugin_textdom), $widget_ops, $control_ops);
+		parent::__construct(false, __('WP Calendar (Grouped)', fsCalendar::$plugin_textdom), $widget_ops, $control_ops);
     }
 
     /** @see WP_Widget::widget */
@@ -196,7 +196,7 @@ class WPCalendarGrouped extends WP_Widget {
 }
 
 class WPCalendarSimple extends WP_Widget {
-    function WPCalendarSimple() {
+    function __construct() {
     	$widget_ops = array(
     		'classname'=>'WPCalendarSimple', 
     		'description'=>__('Shows a number of events', fsCalendar::$plugin_textdom)
@@ -205,7 +205,7 @@ class WPCalendarSimple extends WP_Widget {
     	// Settings
 		$control_ops = array(); 
 		
-		parent::WP_Widget(false, __('WP Calendar (Simple)', fsCalendar::$plugin_textdom), $widget_ops, $control_ops);
+		parent::__construct(false, __('WP Calendar (Simple)', fsCalendar::$plugin_textdom), $widget_ops, $control_ops);
     }
 
     /** @see WP_Widget::widget */

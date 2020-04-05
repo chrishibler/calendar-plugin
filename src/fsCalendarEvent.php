@@ -34,7 +34,7 @@ class fsEvent {
 	var $date_admin_format;
 	var $time_admin_format;
 	
-	function fsEvent($eventid = 0, $state = '', $admin_fields = true, $postid = 0) {
+	function __construct($eventid = 0, $state = '', $admin_fields = true, $postid = 0) {
 		global $wpdb;
 		
 		$this->loadOptions($admin_fields);

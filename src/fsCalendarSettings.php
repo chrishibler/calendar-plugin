@@ -1,7 +1,7 @@
 <?php
 class fsCalendarSettings {
 	
-	function fsCalendarSettings() {
+	function __construct() {
 		add_action('admin_init',           array(&$this, 'hookRegisterSettings'));
 		add_action('admin_menu',           array(&$this, 'hookAddAdminMenu'));
 	}

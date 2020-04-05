@@ -76,7 +76,7 @@ class fsCalendar {
 	  static $full_calendar_view_opts = array('month', 'basicWeek','basicDay', 'agendaWeek', 'agendaDay');
 	  static $full_calendar_weekmode_opts = array('fixed', 'liquid', 'variable');*/
 
-	 function fsCalendar() {
+	 function __construct() {
 	 	global $wpdb;
 
 	 	// Init Vars
